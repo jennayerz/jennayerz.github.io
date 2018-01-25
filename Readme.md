@@ -110,6 +110,6 @@ Small screen:
 ![nav menu small screen](Images/nav-sm.png)
 
 
-Copyright
+#### Copyright
 
 Coding Boot Camp :copyright: 2017. All Rights Reserved.
