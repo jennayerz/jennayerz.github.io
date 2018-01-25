@@ -4,7 +4,7 @@
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
 
-<img alt="Landing page large screen" src="images/landing-lg.png" width=600>
+<img alt="Landing page large screen" src="Images/landing-lg.png" width=600>
 
 ## Lattitude - Latitude Analysis Dashboard with Attitude
 
