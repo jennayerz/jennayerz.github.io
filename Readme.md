@@ -108,3 +108,8 @@ Large screen:
 
 Small screen:
 ![nav menu small screen](Images/nav-sm.png)
+
+
+Copyright
+
+Coding Boot Camp :copyright: 2017. All Rights Reserved.
