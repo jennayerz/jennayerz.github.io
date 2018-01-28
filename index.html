@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 
-<html lang="en"></html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Latitude</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+    <!-- <div class="button_group">
+        <ul class="header_nav">
+            <li class="landing page"><a href="#">Latitude</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Plots</a>
+                <div class="dropdown-content">
+                    <a href="#">Max temperature</a>
+                    <a href="#">Humidity</a>
+                    <a href="#">Cloudiness</a>
+                    <a href="#">Wind speed</a>
+                </div>
+            </li>
+            <li class="comparison"><a href="#">Comparison</a></li>
+            <li class="data"><a href="#">Data</a></li>
+        </ul>
+    </div> -->
+
     <div class="container">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    <header class="header">
+        <div class="row navbar">
+            <nav class="navbar">
+                <ul>
+                    <div class="col-md-offset-1 col-md-2">
+                        <li><a href="#">Latitude</a></li>
+                    </div>
+                    <div class="col-md-5"></div>
+                    <div class="col-md-1">
+                        <!-- <li><a href="#">Plots</a></li> -->
+                            <button class="dropbtn">Plots</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <span class="caret"></span>
+                                <a href="#">Max temperature</a>
+                                <a href="#">Humidity</a>
+                                <a href="#">Cloudiness</a>
+                                <a href="#">Wind speed</a>
+                            </div>
+                    </div>
+                    <div class="col-md-2">
+                        <li><a href="#">Comparison</a></li>
+                    </div>
+                    <div class="col-md-1">
+                        <li><a href="#">Data</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>  
+    </div>
+    
+    <!-- <header class="header">
         <h1>Latitude</h1>
+    </header> -->
     </header>
     
-
     <h3>Summary: Latitude vs 4 Factors</h3>
     <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsTemp.png" alt="Plot illustration of temperatures at varying latitudes">
     <hr>
@@ -54,5 +86,6 @@
     <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsCloudiness.png" alt="Plot illustration of cloudiness at varying latitudes">
     <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsWind.png" alt="Plot illustration of wind speed at varying latitudes">
 
-
-
+    </div>
+</body>
+</html>
