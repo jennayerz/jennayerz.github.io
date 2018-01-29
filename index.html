@@ -1,3 +1,5 @@
+<!-- LANDING PAGE -->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -5,6 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Latitude</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,69 +17,73 @@
     <header class="headerbar">
 
     <!-- Navigation Bar -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Latitude</a>
-                </div>
-    
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="rightnavbar" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- <button class="dropbtn">Plots</button> -->
-                        <li><a class="page-scroll" href="#about">Plots</a>
-                            <!-- <div id="myDropdown" class="dropdown-content"> -->
-                            <!-- <div class="dropdown-content"> -->
-                                <ul>
-                                    <li><a href="#">Max temperature</a></li>
-                                    <li><a href="#">Humidity</a></li>
-                                    <li><a href="#">Cloudiness</a></li>
-                                    <li><a href="#">Wind speed</a></li>
-                                </ul>
-                            <!-- </div> -->
-                        </li>
-                        <li><a class="page-scroll" href="projects.html">Comparison</a></li>
-                        <li><a class="page-scroll" href="#contact">Data</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Left side of navigation bar -->
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll" href="index.html">Latitude</a>
             </div>
-            <!-- /.container-fluid -->
-        </nav>
     
-
-    <!-- <header class="header">
-        <h1>Latitude</h1>
-    </header> -->
+            <!-- Right side of navigation bar -->
+            <div class="rightnavbar" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" type="button" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="page4.html">Max temperature</a></li>
+                            <li><a href="page5.html">Humidity</a></li>
+                            <li><a href="page6.html">Cloudiness</a></li>
+                            <li><a href="#">Wind speed</a></li>
+                        </ul>
+                </li>
+                <li><a class="page-scroll" href="page2.html">Comparison</a></li>
+                <li><a class="page-scroll" href="page3.html">Data</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     </header>
-    
-    <h3>Summary: Latitude vs 4 Factors</h3>
-    <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsTemp.png" alt="Plot illustration of temperatures at varying latitudes">
-    <hr>
 
-    <p>For this project, we analyzed several different factors that could 
-       affect weather based on latitude as you travel closer to the equator. 
-       We used the OpenWeatherMap API to prove that it gets hotter as you 
-       approach the equator. To achieve this, we randomly selected 500 unique 
-       cities based on latitude and longitude.</p>
-    <p>Matplotlib was used to visualize the dataset that we retrieved and 
-       assembled. Four factors that we considered were temperature, cloudiness, 
-       wind speed, and humidity.</p>
-    <p>This site provides the source data and visualizations created as part 
-       of the analysis, as well as explanations and descriptions of any trends and 
-       correlations witnessed.</p>
-    <hr>
+    <!-- Page content -->
+    <div class="pagecontent">
+        <div class="mainrow">
+            <div class="col-md-8">
+                <h3>Summary: Latitude vs 4 Factors</h3>
+                <hr>
+                
+                <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsTemp.png" align="left" alt="Plot illustration of temperatures at varying latitudes">
 
-    <h3>Visualizations</h3>
-    <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsTemp.png" alt="Plot illustration of temperatures at varying latitudes">
-    <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsHumidity.png" alt="Plot illustration of humidity at varying latitudes">
-    <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsCloudiness.png" alt="Plot illustration of cloudiness at varying latitudes">
-    <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsWind.png" alt="Plot illustration of wind speed at varying latitudes">
+                <p>For this project, we analyzed several different factors that could affect weather based on latitude as you travel closer to the equator. 
+                   We used the OpenWeatherMap API to prove that it gets hotter as you approach the equator. To achieve this, we randomly selected 500 unique 
+                   cities based on latitude and longitude.</p>
+                <p>Matplotlib was used to visualize the dataset that we retrieved and assembled. Four factors that we considered were temperature, cloudiness, 
+                   wind speed, and humidity.</p>
+                <p>This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and 
+                   correlations witnessed.</p>
+            </div>
 
+            <div class="col-md-4">
+                <h3>Visualizations</h3>
+                <hr>
+
+                <div class="lpimages">
+                    <a href="page4.html"><img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsTemp.png" height=120px width=175px alt="Plot illustration of temperatures at varying latitudes"></a>
+                    <a href="page5.html"><img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsHumidity.png" height=120px width=175px alt="Plot illustration of humidity at varying latitudes"></a>
+                    <a href="page6.html"><img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsCloudiness.png" height=120px width=175px alt="Plot illustration of cloudiness at varying latitudes"></a>
+                    <a href="#"><img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsWind.png" height=120px width=175px alt="Plot illustration of wind speed at varying latitudes"></a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <div class="bottomrow">
+        <div class="col-md-12">
+            <footer>
+                <p>© Copyright Coding Bootcamp 2018</p>
+            </footer>
+        </div>
+    </div>
+
 </body>
 </html>
