@@ -10,61 +10,53 @@
 </head>
 
 <body>
-    <header>
-    <!-- <div class="button_group">
-        <ul class="header_nav">
-            <li class="landing page"><a href="#">Latitude</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Plots</a>
-                <div class="dropdown-content">
-                    <a href="#">Max temperature</a>
-                    <a href="#">Humidity</a>
-                    <a href="#">Cloudiness</a>
-                    <a href="#">Wind speed</a>
-                </div>
-            </li>
-            <li class="comparison"><a href="#">Comparison</a></li>
-            <li class="data"><a href="#">Data</a></li>
-        </ul>
-    </div> -->
+    <header class="headerbar">
 
-    <div class="container">
-        <div class="row navbar">
-            <nav class="navbar">
-                <ul>
-                    <div class="col-md-offset-1 col-md-2">
-                        <li><a href="#">Latitude</a></li>
-                    </div>
-                    <div class="col-md-5"></div>
-                    <div class="col-md-1">
-                        <!-- <li><a href="#">Plots</a></li> -->
-                            <button class="dropbtn">Plots</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <span class="caret"></span>
-                                <a href="#">Max temperature</a>
-                                <a href="#">Humidity</a>
-                                <a href="#">Cloudiness</a>
-                                <a href="#">Wind speed</a>
-                            </div>
-                    </div>
-                    <div class="col-md-2">
-                        <li><a href="#">Comparison</a></li>
-                    </div>
-                    <div class="col-md-1">
-                        <li><a href="#">Data</a></li>
-                    </div>
-                </ul>
-            </nav>
-        </div>  
-    </div>
+    <!-- Navigation Bar -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Latitude</a>
+                </div>
     
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="rightnavbar" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <button class="dropbtn">Plots</button> -->
+                        <ul>
+                        <li><a class="page-scroll" href="#about">Plots</a>
+                            <!-- <div id="myDropdown" class="dropdown-content"> -->
+                            <!-- <div class="dropdown-content"> -->
+                                <ul>
+                                    <li><a href="#">Max temperature</a></li>
+                                    <li><a href="#">Humidity</a></li>
+                                    <li><a href="#">Cloudiness</a></li>
+                                    <li><a href="#">Wind speed</a></li>
+                                </ul>
+                            <!-- </div> -->
+                        </li>
+                        </ul>
+                        <li><a class="page-scroll" href="projects.html">Comparison</a></li>
+                        <li><a class="page-scroll" href="#contact">Data</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    
+
     <!-- <header class="header">
         <h1>Latitude</h1>
     </header> -->
     </header>
     
     <h3>Summary: Latitude vs 4 Factors</h3>
-    <img src="/Resources/LatVsTemp.png" alt="Plot illustration of temperatures at varying latitudes">
+    <img src="/Users/jenny/Desktop/jennayerz.github.io.git/Resources/LatVsTemp.png" alt="Plot illustration of temperatures at varying latitudes">
     <hr>
 
     <p>For this project, we analyzed several different factors that could 
