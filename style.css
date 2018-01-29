@@ -7,10 +7,6 @@
     display: block;
 }
 
-.rightnavbar ul ul {
-    display: none;
-}
-
 .rightnavbar ul ul li:hover {
     display: block;
 }
