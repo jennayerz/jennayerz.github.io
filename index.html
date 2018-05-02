@@ -1,89 +1,245 @@
-<!-- LANDING PAGE -->
-
 <!DOCTYPE html>
 
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Latitude</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+        <title>Jenny Chin</title>
+        
+        <!-- Bootstrap CSS/Styling -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+        <link href="/css/grayscale.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    </head>
 
-<body>
-    <header class="headerbar">
+    <body id="page-top">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Left side of navigation bar -->
-            <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="index.html">Latitude</a>
-            </div>
-    
-            <!-- Right side of navigation bar -->
-            <div class="rightnavbar" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" type="button" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="page4.html">Max temperature</a></li>
-                            <li><a href="page5.html">Humidity</a></li>
-                            <li><a href="page6.html">Cloudiness</a></li>
-                            <li><a href="page7.html">Wind speed</a></li>
-                        </ul>
-                </li>
-                <li><a class="page-scroll" href="page2.html">Comparison</a></li>
-                <li><a class="page-scroll" href="page3.html">Data</a></li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-    </header>
-
-    <!-- Page content -->
-    <div class="pagecontent">
-        <div class="mainrow">
-            <div class="col-md-8">
-                <h3>Summary: Latitude vs 4 Factors</h3>
-                <hr>
-                
-                <img src="/Resources/LatVsTemp.png" align="left" alt="Plot illustration of temperatures at varying latitudes">
-
-                <p>For this project, we analyzed several different factors that could affect weather based on latitude as you travel closer to the equator. 
-                   We used the OpenWeatherMap API to prove that it gets hotter as you approach the equator. To achieve this, we randomly selected 500 unique 
-                   cities based on latitude and longitude.</p>
-                <p>Matplotlib was used to visualize the dataset that we retrieved and assembled. Four factors that we considered were temperature, cloudiness, 
-                   wind speed, and humidity.</p>
-                <p>This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and 
-                   correlations witnessed.</p>
-            </div>
-
-            <div class="col-md-4">
-                <h3>Visualizations</h3>
-                <hr>
-
-                <div class="lpimages">
-                    <a href="page4.html"><img src="/Resources/LatVsTemp.png" height=120px width=175px alt="Plot illustration of temperatures at varying latitudes"></a>
-                    <a href="page5.html"><img src="/Resources/LatVsHumidity.png" height=120px width=175px alt="Plot illustration of humidity at varying latitudes"></a>
-                    <a href="page6.html"><img src="/Resources/LatVsCloudiness.png" height=120px width=175px alt="Plot illustration of cloudiness at varying latitudes"></a>
-                    <a href="page7.html"><img src="/Resources/LatVsWind.png" height=120px width=175px alt="Plot illustration of wind speed at varying latitudes"></a>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#project">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        </nav>
 
-    <!-- Footer -->
-    <div class="bottomrow">
-        <div class="col-md-12">
-            <footer>
-                <p>© Copyright Coding Bootcamp 2018</p>
-            </footer>
-        </div>
-    </div>
+        <!-- Main Header -->
+        <header class="masthead">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h1 class="brand-heading">JENNY CHIN</h1>
+                            <p class="intro-text">
+                                Full Stack Developer
+                                <br>Porfolio
+                            </p>
+                            <a href="#about" class="btn btn-circle js-scroll-trigger">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-</body>
+        <!-- About -->
+        <section id="about" class="content-section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>About Jenny Chin</h2>
+                        <p>
+                            San Francisco native with a new passion in deciphering data. A recent graduate from University of California, 
+                            Davis with a degree in Nutrition Science, emphasis in Biology. Interned abroad at a biotechnology company in 
+                            Hong Kong for a summer. Super detail oriented due to working with a CRM system with over 100,000 leads. 
+                            <br>
+                            <br>
+                            Grew up surrounded by almost every game console you can imagine and interested in working in video game related 
+                            industries. Love solving puzzles and problems that stimulate the mind and always striving to reach for the 
+                            highest score. Have a knack for learning and never giving up until I have succeeded. Always have had a strong 
+                            interest in data and decided to pursue something that I am genuinely interested in. 
+                            <br>
+                            <br>
+                            To view my work, please click <a href="#project">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="experience-section content-section text-center">
+            <div class="container">
+                <div class="col-l-g8 mx-auto">
+                    <h2>Experience</h2>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Python</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Matplotlib</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">SQL</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Tableau</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Excel</span>
+                        </a>
+                </div>
+                <br>
+                <div class="col-l-g8 mx-auto">
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Plotly</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">JavaScript</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">PySpark</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Pandas</span>
+                        </a>
+                </div>
+                <br>
+                <div class="col-l-g8 mx-auto">
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">HTML</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">CSS</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Bootstrap</span>
+                        </a>
+                </div>
+                <br>
+                <div class="col-l-g8 mx-auto">
+                        <h3>In progress:</h3>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Machine Learning</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">Natural Language Processing</span>
+                        </a>
+                        <a href="#experience" class="btn btn-default btn-lg">
+                            <span class="experience-name">d3.js</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project -->
+        <section id="project" class="project-section content-section text-center">
+            <div class="container">
+                <div class="col-l-g8 mx-auto">
+                    <h2>Work</h2>
+                    <!-- <p>To predict the Grammy winners of 2018 for Best New Artist, Song of the Year, and Record of the Year, my groupmates and I 
+                        wrote a Python script to perform webscraping from the Youtube API to obtain quantitative data of the past winners and 
+                        current nominations. We graphed the analysis using Plotly to show sentiment analysis for the songs, view count, and like count.
+                    </p>                     -->
+                        <ul class="list-inline banner-project-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/melvyg/Team5" class="btn btn-default btn-lg">
+                                <!-- <i class="fa fa-project1 fa-fw"></i> -->
+                                <span class="network-name">Grammy Winner Prediction 2018</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/Allenfp/DepressionDetectionNLP" class="btn btn-default btn-lg">
+                                <!-- <i class="fa fa-project2 fa-fw"></i> -->
+                                <span class="network-name">Depression Detection</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/thefrostyhalf/best_team_ever" class="btn btn-default btn-lg">
+                                <!-- <i class="fa fa-project3 fa-fw"></i> -->
+                                <span class="network-name">Lyrical Analysis</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section content-section text-center">
+            <div class="container">
+                <div class="col-l-g8 mx-auto">
+                    <h2>Contact</h2>
+                    <p>
+                        <!-- I may be reached at the following links: -->
+                    </p>
+                    <ul class="list-inline banner-contact-buttons">
+                        <li class="list-inline-item">
+                            <a href="https://github.com/jennayerz" class="btn btn-default btn-lg">
+                                <i class="fab fa-github"></i>
+                                <span class="network-name">Github</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/jennychin650/" class="btn btn-default btn-lg">
+                                <i class="fab fa-linkedin"></i>
+                                <span class="network-name">LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Copyright © Jenny Chin</p>
+            </div>
+        </footer>
+
+        <!-- JS Scripts -->
+        <script src="/static/jquery.min.js"></script>
+        <script src="/static/bootstrap.bundle.min.js"></script>
+    
+        <!-- Plugin JavaScript -->
+        <script src="/static/jquery.easing.min.js"></script>
+    
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+    
+        <!-- Custom scripts for this template -->
+        <!-- <script src="/Users/jenny/Desktop/jennayerz.github.io.git/static/grayscale.min.js"></script> -->
+
+    </body>
+
+
+
+
+
 </html>
