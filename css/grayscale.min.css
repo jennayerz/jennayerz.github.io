@@ -73,10 +73,10 @@ p{
     }
     #mainNav .navbar-nav .nav-item:active,#mainNav .navbar-nav .nav-item:focus{
         outline:0;
-        background-color:transparent
+        background-color:black
     }
     
-    /* @media (min-width:992px){ */
+    @media (min-width:992px){
         #mainNav{
             padding-top:20px;
             padding-bottom:20px;
@@ -124,7 +124,7 @@ p{
     .masthead .intro-body .intro-text{
         font-size:18px
     }
-    /* @media (min-width:768px){ */
+    @media (min-width:768px){
         .masthead{
             height:100%;
             padding:0
@@ -181,7 +181,7 @@ p{
         width:100%;
         height:300px
     }
-    /* @media (min-width:992px){ */
+    @media (min-width:992px){
         .content-section{
             padding-top:200px;
             padding-bottom:200px
@@ -217,12 +217,12 @@ p{
     ul.banner-contact-buttons{
         margin-top:0
     }
-    /* @media (max-width:1199px){ */
+    @media (max-width:1199px){
         ul.banner-contact-buttons{
             margin-top:15px
         }
     }
-    /* @media (max-width:767px){ */
+    @media (max-width:767px){
         ul.banner-contact-buttons li{
             display:block;
             margin-bottom:20px;
